@@ -1,0 +1,19 @@
+{
+  "name": "vinylista.co.uk",
+  "version": "1.0.0",
+  "description": "Vinylista",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivertuckwebdev/vinylista.co.uk.git"
+  },
+  "author": "Oliver Tuck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olivertuckwebdev/vinylista.co.uk/issues"
+  },
+  "homepage": "https://github.com/olivertuckwebdev/vinylista.co.uk#readme"
+}
