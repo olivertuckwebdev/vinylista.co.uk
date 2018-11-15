@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/olivertuckwebdev/vinylista.co.uk/issues"
   },
-  "homepage": "https://github.com/olivertuckwebdev/vinylista.co.uk#readme"
+  "homepage": "https://github.com/olivertuckwebdev/vinylista.co.uk#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  }
 }
