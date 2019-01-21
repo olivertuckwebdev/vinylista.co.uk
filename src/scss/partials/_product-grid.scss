@@ -1,0 +1,40 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  .product {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .product-information {
+    padding: 1.25rem;
+    background-color: $background-color-white;
+    border-top: 3px solid $color-accent-primary;
+
+    .product-name {
+      margin-bottom: .25rem;
+      font-size: 1.25rem;
+    }
+
+    .artist {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .price {
+      margin-bottom: .25rem;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: $color-accent-primary;
+    }
+
+    .format {
+      font-size: .875rem;
+    }
+  }
+}

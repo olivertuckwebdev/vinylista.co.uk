@@ -1,0 +1,53 @@
+.site-navigation {
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  li {
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      @include min-width-lg() {
+        padding: 2.25rem 1rem;
+      }
+
+      @include min-width-xl() {
+        padding: 2.25rem 1.5rem;
+      }
+
+      ion-icon {
+        margin-right: .25rem;
+      }
+
+      &::before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        background-color: $color-accent-primary;
+        transition: all .3s;
+        content: '';
+      }
+
+      &:hover {
+        &::before {
+          height: 5px;
+        }
+      }
+
+      &.active {
+        color: $color-accent-primary;
+
+        &::before {
+          height: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Widths
+$max-width-sm: 575px;
+$min-width-sm: 576px;
+$max-width-md: 767px;
+$min-width-md: 768px;
+$max-width-lg: 991px;
+$min-width-lg: 992px;
+$min-width-xl: 1200px;
+
+// Typography
+$font-family-base: 'Source Sans Pro', sans-serif;
+$font-family-headings: 'Source Sans Pro', sans-serif;
+
+// Colours
+$color-accent-primary: #bd1427;
+$color-accent-primary: #ed0677;
+//$color-accent-primary: #c79b1c;
+$color-text-primary: #363636;
+$color-text-secondary: #8f8f8f;
+$color-link: $color-text-primary;
+$color-link-hover: $color-accent-primary;
+$color-border: #e6e6e6;
+$color-white: #fff;
+
+// Background colours
+$background-color-body: #f2f2f2;
+$background-color-white: #fff;

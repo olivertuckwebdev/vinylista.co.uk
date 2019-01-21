@@ -1,0 +1,49 @@
+.site-header {
+  border-bottom: 1px solid $color-border;
+  background-color: $background-color-white;
+
+  .inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    .logo {
+      display: inline-block;
+
+      img {
+        display: block;
+      }
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+      display: flex;
+      align-items: center;
+    }
+
+    .col-2 {
+      justify-content: center;
+    }
+
+    .col-3 {
+      justify-content: flex-end;
+    }
+  }
+
+  .links {
+    display: flex;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      ion-icon {
+        margin-right: .25rem;
+      }
+    }
+
+    .cart {
+      margin-left: 1.5rem;
+    }
+  }
+}

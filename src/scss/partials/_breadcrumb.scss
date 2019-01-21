@@ -1,0 +1,43 @@
+.breadcrumb {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: $background-color-white;
+  border-bottom: 1px solid $color-border;
+
+  ol {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  li {
+    .current {
+      display: flex;
+      align-items: center;
+      font-size: .875rem;
+      color: $color-text-secondary;
+
+      ion-icon {
+        margin-right: .25rem;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-self: flex-start;
+      font-size: .875rem;
+
+      ion-icon {
+        margin-right: .25rem;
+      }
+    }
+  }
+
+  .separator {
+    margin-right: .25rem;
+    margin-left: .25rem;
+  }
+}
