@@ -8,6 +8,10 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
+    @include max-width-md() {
+      grid-template-columns: 1fr;
+    }
+
     .col-1,
     .col-2,
     .col-3 {
@@ -15,12 +19,31 @@
       align-items: center;
     }
 
+    .col-1 {
+      @include max-width-md() {
+        justify-content: center;
+      }
+    }
+
     .col-2 {
       justify-content: center;
+
+      @include max-width-md() {
+        margin-top: 2rem;
+      }
     }
 
     .col-3 {
       justify-content: flex-end;
+
+      @include max-width-md() {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      @include max-width-sm() {
+        position: relative;
+      }
     }
   }
 
@@ -38,6 +61,7 @@
 
     input {
       flex-grow: 1;
+      width: 200px;
       padding: 0.5rem 0.75rem;
       font-size: 1rem;
     }
@@ -56,9 +80,15 @@
   }
 
   .links {
+    position: relative;
     display: flex;
 
-    a {
+    @include max-width-sm() {
+      position: static;
+    }
+
+    a,
+    button {
       display: flex;
       align-items: center;
 
@@ -68,7 +98,69 @@
     }
 
     .cart {
+      padding: 0;
       margin-left: 1.5rem;
+      background-color: transparent;
+      font-size: 1rem;
+      border: none;
+    }
+
+    .mini-cart {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      width: 250px;
+      padding: 1rem;
+      background-color: $color-white;
+      border: 1px solid $color-border;
+      z-index: 5;
+
+      @include max-width-sm() {
+        top: 2rem;
+        right: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .product {
+        display: flex;
+        margin-bottom: 1rem;
+
+        .thumbnail {
+          display: block;
+        }
+
+        .information {
+          position: relative;
+          flex-grow: 1;
+          margin-left: 0.5rem;
+
+          p {
+            margin: 0;
+          }
+
+          .title {
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+
+          .remove {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            background-color: transparent;
+            font-size: 1rem;
+            border: none;
+          }
+        }
+      }
+
+      .total {
+        span {
+          font-weight: 600;
+        }
+      }
     }
   }
 }

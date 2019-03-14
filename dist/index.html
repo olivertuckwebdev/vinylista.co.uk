@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Vinylista</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
   </head>
@@ -24,7 +30,43 @@
           <div class="col-3">
             <div class="links">
               <a href="#" class="account"><ion-icon name="person"></ion-icon>Account</a>
-              <a href="#" class="cart"><ion-icon name="cart"></ion-icon>Cart</a>
+              <button tartype="button" class="cart"><ion-icon name="cart"></ion-icon>Cart</button>
+              <div class="mini-cart" style="display: none;">
+                <div class="product">
+                  <img
+                    class="thumbnail"
+                    src="images/product-images/product-2.jpg"
+                    alt="Product 1"
+                    width="32"
+                    height="32"
+                  />
+                  <div class="information">
+                    <p class="title">Revolver</p>
+                    <p class="price">1 x £9.99</p>
+                    <button type="button" class="remove"><ion-icon name="trash"></ion-icon></button>
+                  </div>
+                </div>
+                <div class="product">
+                  <img
+                    class="thumbnail"
+                    src="images/product-images/product-1.jpg"
+                    alt="Product 1"
+                    width="32"
+                    height="32"
+                  />
+                  <div class="information">
+                    <p class="title">Glastonbury 2000</p>
+                    <p class="price">1 x £9.99</p>
+                    <button type="button" class="remove">
+                      <ion-icon name="trash"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="total">
+                  <p><span>Total:</span> £19.98</p>
+                </div>
+                <a class="btn btn-primary" href="#">Checkout<ion-icon name="arrow-forward"></ion-icon></a>
+              </div>
             </div>
           </div>
         </div>
@@ -39,13 +81,13 @@
               <a class="active" href="#"><ion-icon name="disc"></ion-icon>Vinyl</a>
             </li>
             <li>
-              <a href="#">About us</a>
+              <a href="#"><ion-icon name="information-circle"></ion-icon>About us</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#"><ion-icon name="chatboxes"></ion-icon>Contact</a>
             </li>
             <li>
-              <a href="#">FAQs</a>
+              <a href="#"><ion-icon name="help-circle"></ion-icon>FAQs</a>
             </li>
           </ul>
         </div>
@@ -67,7 +109,7 @@
     <main>
       <div class="container">
         <h1>Vinyl</h1>
-        <p class="results">Showing 1-24 of 19066 results.</p>
+        <p class="results">Showing 1-4 of 4 results.</p>
         <div class="product-grid">
           <div class="product">
             <img src="images/product-images/product-1.jpg" alt="Product 1" />
@@ -117,7 +159,7 @@
         <div class="footer-grid">
           <div class="col-1">
             <h3>Quick links</h3>
-            <ul>
+            <ul class="quick-links">
               <li>
                 <a href="#">About us</a>
               </li>
@@ -134,10 +176,39 @@
           </div>
           <div class="col-2">
             <h3>Secure payments</h3>
+            <ul class="payment-icons">
+              <li><i class="fab fa-cc-visa"></i></li>
+              <li><i class="fab fa-cc-mastercard"></i></li>
+              <li><i class="fab fa-cc-mastercard"></i></li>
+              <li><i class="fab fa-cc-paypal"></i></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Follow us</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>Newsletter</h3>
+            <form class="newsletter">
+              <input type="text" placeholder="Email" name="newsletter" />
+              <button type="submit">Subscribe</button>
+            </form>
           </div>
         </div>
+        <span>&copy; Vinylista 2019.</span>
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

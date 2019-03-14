@@ -26,6 +26,15 @@ a {
   }
 }
 
+button {
+  color: $color-link;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
 .container {
   width: 100%;
   padding-right: 1rem;

@@ -3,6 +3,18 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
 
+  @include max-width-lg() {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include max-width-md() {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include max-width-sm() {
+    grid-template-columns: 1fr;
+  }
+
   .product {
     img {
       display: block;

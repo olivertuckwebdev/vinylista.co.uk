@@ -10,6 +10,16 @@
   transition: all 0.2s ease-in-out;
 }
 
+.btn-primary {
+  color: $color-white;
+  background-color: $color-accent-primary;
+
+  &:hover {
+    color: $color-white;
+    background-color: lighten($color-accent-primary, 5%);
+  }
+}
+
 .btn-outline-primary {
   color: $color-accent-primary;
   border: 2px solid $color-accent-primary;
