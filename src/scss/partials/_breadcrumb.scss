@@ -2,7 +2,7 @@
   padding-top: 2rem;
   padding-bottom: 2.5rem;
 
-  ol {
+  .inner {
     display: flex;
     align-items: center;
     padding: 0;
@@ -10,26 +10,24 @@
     list-style-type: none;
   }
 
-  li {
-    .current {
-      display: flex;
-      align-items: center;
-      font-size: 0.875rem;
-      color: $color-text-secondary;
+  .current {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: $color-text-secondary;
 
-      ion-icon {
-        margin-right: 0.25rem;
-      }
+    ion-icon {
+      margin-right: 0.25rem;
     }
+  }
 
-    a {
-      display: flex;
-      align-items: center;
-      font-size: 0.875rem;
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
 
-      ion-icon {
-        margin-right: 0.25rem;
-      }
+    ion-icon {
+      margin-right: 0.25rem;
     }
   }
 
