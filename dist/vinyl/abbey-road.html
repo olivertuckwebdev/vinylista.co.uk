@@ -2,8 +2,7 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <title>About &middot; Vinylista</title>
-    <meta name="description" content="About the Vinylista company." />
+    <title>Abbey Road &middot; Vinylista</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -11,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
   </head>
   <body>
     <header class="site-header">
@@ -19,7 +18,7 @@
         <div class="inner">
           <div class="col-1">
             <a class="logo" href="/">
-              <img src="images/vinylista.png" alt="Vinylista" width="140" />
+              <img src="../images/vinylista.png" alt="Vinylista" width="140" />
             </a>
           </div>
           <div class="col-2">
@@ -30,13 +29,13 @@
           </div>
           <div class="col-3">
             <div class="links">
-              <a href="account.html" class="account"><ion-icon name="person"></ion-icon>Account</a>
+              <a href="../account.html" class="account"> <ion-icon name="person"></ion-icon>Account </a>
               <button type="button" class="cart"><ion-icon name="cart"></ion-icon>Cart</button>
               <div class="mini-cart" style="display: none;">
                 <div class="product">
                   <img
                     class="thumbnail"
-                    src="images/product-images/product-2.jpg"
+                    src="../images/product-images/product-2.jpg"
                     alt="Product 1"
                     width="32"
                     height="32"
@@ -44,13 +43,15 @@
                   <div class="information">
                     <p class="title">Revolver</p>
                     <p class="price">1 x £9.99</p>
-                    <button type="button" class="remove"><ion-icon name="trash"></ion-icon></button>
+                    <button type="button" class="remove">
+                      <ion-icon name="trash"></ion-icon>
+                    </button>
                   </div>
                 </div>
                 <div class="product">
                   <img
                     class="thumbnail"
-                    src="images/product-images/product-1.jpg"
+                    src="../images/product-images/product-1.jpg"
                     alt="Product 1"
                     width="32"
                     height="32"
@@ -76,19 +77,19 @@
         <div class="container">
           <ul>
             <li>
-              <a href="/"><ion-icon name="home"></ion-icon>Home</a>
+              <a href="/"> <ion-icon name="home"></ion-icon>Home </a>
             </li>
             <li>
-              <a href="vinyl.html"><ion-icon name="disc"></ion-icon>Vinyl</a>
+              <a href="../vinyl.html"> <ion-icon name="disc"></ion-icon>Vinyl </a>
             </li>
             <li>
-              <a class="active" href="about.html"><ion-icon name="information-circle"></ion-icon>About</a>
+              <a href="../about.html"> <ion-icon name="information-circle"></ion-icon>About </a>
             </li>
             <li>
-              <a href="contact.html"><ion-icon name="chatboxes"></ion-icon>Contact</a>
+              <a href="../contact.html"> <ion-icon name="chatboxes"></ion-icon>Contact </a>
             </li>
             <li>
-              <a href="faqs.html"><ion-icon name="help-circle"></ion-icon>FAQs</a>
+              <a href="../faqs.html"> <ion-icon name="help-circle"></ion-icon>FAQs </a>
             </li>
           </ul>
         </div>
@@ -99,29 +100,36 @@
         <div class="inner">
           <a href="/"><ion-icon name="home"></ion-icon>Home</a>
           <span class="separator">&raquo;</span>
-          <span class="current"><ion-icon name="information-circle"></ion-icon>About</span>
+          <a href="../vinyl.html"><ion-icon name="disc"></ion-icon>Vinyl</a>
+          <span class="separator">&raquo;</span>
+          <span class="current">Abbey Road</span>
         </div>
       </div>
     </nav>
     <main>
       <div class="container">
-        <div class="content-block">
-          <h1>About</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien ipsum, dignissim et mi vel,
-            sollicitudin vestibulum quam. Etiam sit amet semper neque. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Mauris blandit, nibh non viverra bibendum, turpis ipsum
-            ullamcorper metus, eu ultricies diam velit scelerisque urna. Donec feugiat nunc in augue hendrerit, non
-            sollicitudin eros ultrices. Nullam vitae facilisis nunc. Ut pulvinar consectetur fermentum. Cras vehicula
-            est et diam volutpat pellentesque a a diam. Nam dapibus lorem elit, non semper massa luctus id. Vivamus
-            dapibus nunc in neque tincidunt, a fermentum eros egestas. Nunc ac hendrerit diam.
-          </p>
-          <p>
-            Morbi interdum dapibus felis et maximus. Sed congue quam nec neque tristique, quis dapibus libero semper.
-            Sed fringilla dictum dapibus. Vestibulum sed felis et neque iaculis rhoncus laoreet elementum lectus. Nulla
-            congue libero neque, in lobortis ipsum mattis quis. Nam condimentum metus risus, et feugiat augue fringilla
-            vitae. Quisque dignissim erat et purus egestas tempus.
-          </p>
+        <div class="single-product-grid">
+          <img src="../images/product-images/product-3.jpg" alt="Abbey Road" />
+          <div class="product-information">
+            <h1>Abbey Road</h1>
+            <div class="artist-price">
+              <h2>The Beatles</h2>
+              <span class="price">£9.99</span>
+            </div>
+            <div class="details">
+              <span><strong>Format:</strong> LP</span>
+              <span><strong>Genre:</strong> Rock</span>
+            </div>
+            <div class="info">
+              <p>
+                Morbi interdum dapibus felis et maximus. Sed congue quam nec neque tristique, quis dapibus libero
+                semper. Sed fringilla dictum dapibus. Vestibulum sed felis et neque iaculis rhoncus laoreet elementum
+                lectus. Nulla congue libero neque, in lobortis ipsum mattis quis. Nam condimentum metus risus, et
+                feugiat augue fringilla vitae. Quisque dignissim erat et purus egestas tempus.
+              </p>
+            </div>
+            <button class="btn btn-secondary" type="submit">Add to cart</button>
+          </div>
         </div>
       </div>
     </main>
@@ -132,16 +140,16 @@
             <h3>Quick links</h3>
             <ul class="quick-links">
               <li>
-                <a href="about.html">About</a>
+                <a href="../about.html">About</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="../contact.html">Contact</a>
               </li>
               <li>
-                <a href="faqs.html">FAQs</a>
+                <a href="../faqs.html">FAQs</a>
               </li>
               <li>
-                <a href="terms-and-conditions.html">Terms & conditions</a>
+                <a href="../terms-and-conditions.html">Terms & conditions</a>
               </li>
             </ul>
           </div>
@@ -180,6 +188,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

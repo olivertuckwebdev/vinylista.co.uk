@@ -1,0 +1,51 @@
+.single-product-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2rem;
+
+  @include max-width-md() {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-information {
+    padding: 3rem;
+    background-color: $background-color-white;
+
+    @include max-width-md() {
+      padding: 2rem;
+    }
+  }
+
+  .artist-price {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      color: $color-text-secondary;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-accent-primary;
+    }
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .info {
+    margin-top: 3rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}

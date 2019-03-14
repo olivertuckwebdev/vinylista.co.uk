@@ -2,7 +2,8 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <title>About &middot; Vinylista</title>
+    <title>Account &middot; Vinylista</title>
+    <meta name="description" content="Log in or create an account for Vinylista." />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -18,7 +19,7 @@
       <div class="container">
         <div class="inner">
           <div class="col-1">
-            <a class="logo" href="#">
+            <a class="logo" href="/">
               <img src="images/vinylista.png" alt="Vinylista" width="140" />
             </a>
           </div>
@@ -99,9 +100,9 @@
     <nav class="breadcrumb">
       <div class="container">
         <div class="inner">
-          <a href="/"> <ion-icon name="home"></ion-icon>Home </a>
+          <a href="/"><ion-icon name="home"></ion-icon>Home</a>
           <span class="separator">&raquo;</span>
-          <span class="current"> <ion-icon name="information-circle"></ion-icon>About </span>
+          <span class="current"><ion-icon name="information-circle"></ion-icon>About</span>
         </div>
       </div>
     </nav>
@@ -111,49 +112,50 @@
         <div class="account-grid">
           <div class="log-in">
             <h2>Log in</h2>
-            <form action="">
+            <form>
               <div class="form-group-email">
                 <label for="email">Email</label>
-                <input type="email" name="password" placeholder="Email" />
+                <input type="email" name="password" placeholder="Email" id="email" />
               </div>
               <div class="form-group-password">
                 <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password" id="password" />
               </div>
               <button class="btn btn-primary" type="submit">Log in</button>
               <a href="#">Forgot your password?</a>
               <div class="form-group-remember-me">
                 <label for="remember-me">Remember me</label>
-                <input type="checkbox" name="remember-me" />
+                <input type="checkbox" name="remember-me" id="remember-me" />
               </div>
             </form>
           </div>
           <div class="register">
             <h2>Register</h2>
-            <form action="">
+            <form>
               <div class="form-group-name">
                 <div>
                   <label for="first-name">First name</label>
-                  <input type="text" name="first-name" placeholder="First name">
+                  <input type="text" name="first-name" placeholder="First name" id="first-name" />
                 </div>
                 <div>
                   <label for="last-name">Last name</label>
-                  <input type="text" name="last-name" placeholder="Second name">
+                  <input type="text" name="last-name" placeholder="Second name" id="last-name" />
                 </div>
               </div>
               <div class="form-group-email">
-                <label for="email">Email</label>
-                <input type="email" name="password" placeholder="Email" />
+                <label for="register-email">Email</label>
+                <input type="email" name="password" placeholder="Email" id="register-email" />
               </div>
               <div class="form-group-password">
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Password" />
+                <label for="register-password">Password</label>
+                <input type="password" name="password" placeholder="Password" id="register-password" />
               </div>
               <div class="form-group-confirm-password">
                 <label for="confirm-password">Confirm password</label>
-                <input type="password" name="confirm-password" placeholder="Confirm password" />
+                <input type="password" name="confirm-password" placeholder="Confirm password" id="confirm-password" />
               </div>
               <button class="btn btn-primary" type="submit">Register</button>
+            </form>
           </div>
         </div>
       </div>

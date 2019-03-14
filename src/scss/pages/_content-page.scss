@@ -1,6 +1,10 @@
 .content-block {
   padding: 3rem;
   background-color: $background-color-white;
+
+  @include max-width-sm() {
+    padding: 2rem;
+  }
 }
 
 .contact-form {
@@ -16,6 +20,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     margin-bottom: 2rem;
+
+    @include max-width-sm() {
+      grid-template-columns: 1fr;
+    }
   }
 
   input[type='email'] {

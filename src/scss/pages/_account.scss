@@ -4,10 +4,18 @@
   grid-gap: 2rem;
   margin-top: 2rem;
 
+  @include max-width-lg() {
+    grid-template-columns: 1fr;
+  }
+
   .log-in,
   .register {
     padding: 3rem;
     background-color: $background-color-white;
+
+    @include max-width-sm() {
+      padding: 2rem;
+    }
 
     h2 {
       margin-bottom: 2rem;
@@ -79,6 +87,10 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
       margin-bottom: 1rem;
+
+      @include max-width-sm() {
+        grid-template-columns: 1fr;
+      }
     }
 
     .form-group-email,
