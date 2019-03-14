@@ -1,8 +1,11 @@
-input[type="text"] {
+input[type='text'],
+input[type='email'],
+textarea {
   border: 1px solid $color-border;
   transition: border 0.2s ease-in-out;
 
   &:focus {
     border-color: $color-accent-primary;
+    outline: none;
   }
 }

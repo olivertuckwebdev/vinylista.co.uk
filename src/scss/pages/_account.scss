@@ -1,0 +1,94 @@
+.account-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+
+  .log-in,
+  .register {
+    padding: 3rem;
+    background-color: $background-color-white;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .log-in {
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    input[type='email'],
+    input[type='password'] {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid $color-border;
+    }
+
+    .form-group-email,
+    .form-group-password {
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      margin-bottom: 1rem;
+    }
+
+    .form-group-remember-me {
+      display: flex;
+      align-items: center;
+      float: right;
+
+      label {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      input[type='checkbox'] {
+        position: relative;
+        top: 1px;
+        margin: 0 0 0 0.5rem;
+      }
+    }
+  }
+
+  .register {
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'] {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid $color-border;
+    }
+
+    .form-group-name {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group-email,
+    .form-group-password,
+    .form-group-confirm-password {
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
+}

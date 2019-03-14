@@ -1,19 +1,24 @@
 // Variables
-@import "common/variables";
+@import 'common/variables';
 
 // Common
-@import "common/mixins";
-@import "common/global";
-@import "common/typography";
+@import 'common/mixins';
+@import 'common/global';
+@import 'common/typography';
 
 // Components
-@import "components/buttons";
-@import "components/forms";
+@import 'components/buttons';
+@import 'components/forms';
 
 // Partials
-@import "partials/header";
-@import "partials/navigation";
-@import "partials/breadcrumb";
-@import "partials/main";
-@import "partials/footer";
-@import "partials/product-grid";
+@import 'partials/header';
+@import 'partials/navigation';
+@import 'partials/breadcrumb';
+@import 'partials/main';
+@import 'partials/footer';
+@import 'partials/product-grid';
+
+// Pages
+@import 'pages/home';
+@import 'pages/content-page';
+@import 'pages/account';
