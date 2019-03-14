@@ -5,14 +5,8 @@
   .inner {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-
-    .logo {
-      display: inline-block;
-
-      img {
-        display: block;
-      }
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     .col-1,
     .col-2,
@@ -30,6 +24,37 @@
     }
   }
 
+  .logo {
+    display: inline-block;
+
+    img {
+      display: block;
+    }
+  }
+
+  .site-search {
+    display: flex;
+    width: 100%;
+
+    input {
+      flex-grow: 1;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+    }
+
+    button {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      color: $color-white;
+      background-color: $color-accent-primary;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: none;
+    }
+  }
+
   .links {
     display: flex;
 
@@ -38,7 +63,7 @@
       align-items: center;
 
       ion-icon {
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
     }
 

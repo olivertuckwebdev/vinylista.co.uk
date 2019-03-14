@@ -1,8 +1,6 @@
 .breadcrumb {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  background-color: $background-color-white;
-  border-bottom: 1px solid $color-border;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
 
   ol {
     display: flex;
@@ -16,28 +14,28 @@
     .current {
       display: flex;
       align-items: center;
-      font-size: .875rem;
+      font-size: 0.875rem;
       color: $color-text-secondary;
 
       ion-icon {
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
     }
 
     a {
       display: flex;
       align-items: center;
-      justify-self: flex-start;
-      font-size: .875rem;
+      font-size: 0.875rem;
 
       ion-icon {
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
     }
   }
 
   .separator {
-    margin-right: .25rem;
-    margin-left: .25rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: $color-text-secondary;
   }
 }

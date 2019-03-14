@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1rem;
-  font-size: .75rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-outline-primary {
@@ -17,5 +17,15 @@
   &:hover {
     color: $color-white;
     background-color: $color-accent-primary;
+  }
+}
+
+.btn-secondary {
+  color: $color-white;
+  background-color: $color-accent-secondary;
+
+  &:hover {
+    color: $color-white;
+    background-color: lighten($color-accent-secondary, 5%);
   }
 }

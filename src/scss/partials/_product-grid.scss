@@ -17,24 +17,25 @@
     border-top: 3px solid $color-accent-primary;
 
     .product-name {
-      margin-bottom: .25rem;
+      margin-bottom: 0.25rem;
       font-size: 1.25rem;
     }
 
     .artist {
+      color: $color-text-secondary;
       font-size: 1rem;
       font-weight: 400;
     }
 
     .price {
-      margin-bottom: .25rem;
+      margin-bottom: 0.25rem;
       font-size: 1.125rem;
       font-weight: 700;
       color: $color-accent-primary;
     }
 
     .format {
-      font-size: .875rem;
+      font-size: 0.875rem;
     }
   }
 }
