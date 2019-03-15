@@ -40,3 +40,13 @@
     background-color: lighten($color-accent-secondary, 5%);
   }
 }
+
+.btn-outline-white {
+  color: $color-white;
+  border: 2px solid $color-white;
+
+  &:hover {
+    color: $color-text-primary;
+    background-color: $color-white;
+  }
+}

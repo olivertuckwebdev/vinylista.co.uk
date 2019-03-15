@@ -1,3 +1,28 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  margin-bottom: 3rem;
+  background-image: url('../images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  span {
+    display: block;
+    margin-bottom: 2rem;
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px #000;
+  }
+
+  .btn {
+    width: 200px;
+    justify-content: center;
+  }
+}
+
 .latest-arrivals {
   margin-bottom: 3rem;
 }
