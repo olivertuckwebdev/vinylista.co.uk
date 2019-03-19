@@ -17,5 +17,5 @@ let searchSubmit = document.querySelector('.site-search button');
 
 searchSubmit.onclick = function(e) {
   e.preventDefault();
-  location.href = '/search-results.html';
+  location.href = './search-results.html';
 };
